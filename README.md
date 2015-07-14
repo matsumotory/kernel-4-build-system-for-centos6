@@ -8,5 +8,5 @@ cd build-itamae
 vagrant up
 itamae ssh --vagrant roles/build-kernel-for-cent64.rb
 vagrant ssh
-ls -l rpmbuild/RPMS/x86_64/
+ls -l ~/rpmbuild/RPMS/x86_64/
 ```
