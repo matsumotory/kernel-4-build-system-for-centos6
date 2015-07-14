@@ -27,6 +27,7 @@ end
   pcre-devel
   wget
   bc
+  ncurses-devel
 
 }.each do |pkg|
   package pkg do
