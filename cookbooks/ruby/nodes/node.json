@@ -1,0 +1,11 @@
+{
+  "rbenv": {
+    "versions": ["2.2.1", "2.2.2"],
+    "local": "2.2.2",
+    "gems": ["bundler", "rake"]
+    "user": "vagrant"
+    "rbenv_config_file": "~/.bash_profile"
+    "rbenv_dir": "/var/tmp/rbenv"
+    "rubybuild_dir": "/var/tmp/rbenv/plugins/ruby-build"
+  }
+}
