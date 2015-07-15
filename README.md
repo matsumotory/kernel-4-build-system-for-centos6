@@ -1,6 +1,6 @@
-# Kernel 4.x.y build system for CentOS6 on Vagrant
+# Kernel 4.x.y build system for CentOS6
 
-kernel 4.x.y build server for centos6 created by Vagrant and Itamae
+kernel 4.x.y build system for centos6 created by Vagrant and Itamae
 
 ## dependency
 
