@@ -8,6 +8,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "centos64-x86_64-20140116.box"
   config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.4.2/centos64-x86_64-20140116.box"
+  config.vm.provider "virtualbox" do |vb|
+    vb.customize ["modifyvm", :id, "--memory", "2048"]
+  end
   # install plugin: `vagrant plugin install vagrant-persistent-storage`
   config.persistent_storage.enabled = true
   config.persistent_storage.location = "./build-space.vdi"
