@@ -17,7 +17,7 @@ git build_dir do
 end
 
 execute "setup building kernel" do
-  command "chown -R #{node["rbenv"]["user"]}.#{node["rbenv"]["user"]} #{build_dir}"
+  command "chown -R #{node["rbenv"]["user"]}.#{node["rbenv"]["user"]} #{build_dir} /home/#{node["rbenv"]["user"]}/rpmbuild"
 end
 
 execute "build kernel" do
