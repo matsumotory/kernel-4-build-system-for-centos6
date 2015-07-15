@@ -1,6 +1,6 @@
-# Kernel 4.x.y build system for CentOS6
+# Kernel 4.x.y build system for CentOS 6
 
-kernel 4.x.y build system for centos6 created by Vagrant and Itamae
+kernel 4.x.y build system for centos 6 created by Vagrant and Itamae
 
 ## dependency
 
@@ -22,4 +22,4 @@ make
 make KERNEL_VER=4.1.2
 ```
 
-build into ./build/kernel-4.x.y
+create rpm into ./build/kernel-4.x.y
