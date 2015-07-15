@@ -11,9 +11,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # install plugin: `vagrant plugin install vagrant-persistent-storage`
   config.persistent_storage.enabled = true
   config.persistent_storage.location = "./build-space.vdi"
-  config.persistent_storage.size = 10000
+  config.persistent_storage.size = 20000
   config.persistent_storage.mountname = 'build-space'
   config.persistent_storage.filesystem = 'ext4'
-  config.persistent_storage.mountpoint = '/usr/local/src'
+  config.persistent_storage.mountpoint = '/home/vagrant/rpmbuild'
   config.persistent_storage.volgroupname = 'build-group'
 end
