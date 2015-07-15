@@ -2,6 +2,12 @@
 
 kernel 4.x.y build server for centos6 created by Vagrant and Itamae
 
+## dependency
+
+- vagrant
+- vagrant-persistent-storage
+- itamae
+
 ## create build server
 
 - kernel-4.1.1
