@@ -12,7 +12,6 @@ end
 %w{
 
   libmemcached-last-devel
-  ccache
 
 }.each do |pkg|
   package pkg do
