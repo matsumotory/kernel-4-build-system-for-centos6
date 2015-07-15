@@ -22,5 +22,5 @@ end
 
 execute "build kernel" do
   user node["rbenv"]["user"]
-  command "cd #{build_dir} && make THREAD=2 KERNEL_VER=4.1.2 && mv #{build_dir}/build/linux-4.1.2 /vagrant/build/."
+  command "cd #{build_dir} && make THREAD=2 KERNEL_VER=4.1.2 && cp -prfv #{build_dir}/build/linux-4.1.2 /vagrant/build/."
 end
