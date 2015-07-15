@@ -9,8 +9,15 @@ remote_file "/etc/yum.repos.d/epel.repo" do
   group "root"
 end
 
-package "libmemcached-last-devel" do
-   action :install
-   options "--enablerepo=remi"
+%w{
+
+  libmemcached-last-devel
+  ccache
+
+}.each do |pkg|
+  package pkg do
+     action :install
+     options "--enablerepo=remi"
+  end
 end
 
