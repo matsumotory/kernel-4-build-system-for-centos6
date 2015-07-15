@@ -22,5 +22,5 @@ end
 
 execute "build kernel" do
   user node["rbenv"]["user"]
-  command "cd #{build_dir} && make && mv #{build_dir}/build/linux-4.1.1 ~/."
+  command "cd #{build_dir} && make && mv #{build_dir}/build/linux-4.1.1 /vagrant/build/."
 end
