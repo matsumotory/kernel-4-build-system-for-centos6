@@ -8,9 +8,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "centos64-x86_64-20140116.box"
   config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.4.2/centos64-x86_64-20140116.box"
-  config.vm.synced_folder ".", "/vagrant"
-  #config.vm.provider :virtualbox do |vbox|
-  #  vbox.customize ["modifyvm", :id, "--natdnsproxy1", "off"]
-  #  vbox.customize ["modifyvm", :id, "--natdnshostresolver1", "off"]
-  #end
+  # install plugin: `vagrant plugin install vagrant-persistent-storage`
+  config.persistent_storage.enabled = true
+  config.persistent_storage.location = "./build-space.vdi"
+  config.persistent_storage.size = 10000
+  config.persistent_storage.mountname = 'build-space'
+  config.persistent_storage.filesystem = 'ext4'
+  config.persistent_storage.mountpoint = '/usr/local/src'
+  config.persistent_storage.volgroupname = 'build-group'
 end
