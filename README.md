@@ -6,7 +6,7 @@ kernel 4.x.y build server for centos6 created by Vagrant and Itamae
 ```
 cd vagrant-build-kernel-centos6
 vagrant up
-itamae ssh --vagrant roles/build-kernel-for-cent64.rb
+itamae ssh -l debug --vagrant roles/build-kernel-for-cent64.rb
 vagrant ssh
 ls -l ~/linux-4.1.1
 ```
