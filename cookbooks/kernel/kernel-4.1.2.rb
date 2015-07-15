@@ -22,5 +22,5 @@ end
 
 execute "build kernel" do
   user node["rbenv"]["user"]
-  command "cd #{build_dir} && make && mv #{build_dir}/build/linux-4.1.2 ~/."
+  command "cd #{build_dir} && make KERNEL_VER=4.1.2 && mv #{build_dir}/build/linux-4.1.2 ~/."
 end
