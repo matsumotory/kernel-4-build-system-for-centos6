@@ -11,18 +11,16 @@ node ||= {
 }
 
 build_dir = "/usr/local/src/kernel-build"
-kernel_ver = "4.1.2"
 
 git build_dir do
   repository "https://github.com/matsumoto-r/build-kernel-4.x-for-centos6.git"
-  not_if "test -d #{build_dir}"
 end
 
 execute "setup building kernel" do
-  command "chown -R #{node["rbenv"]["user"]}.#{node["rbenv"]["user"]} #{build_dir}"
+  command "chown -R #{node["rbenv"]["user"]}.#{node["rbenv"]["user"]} #{build_dir} /home/#{node["rbenv"]["user"]}/rpmbuild"
 end
 
 execute "build kernel" do
   user node["rbenv"]["user"]
-  command "cd #{build_dir} && make KERNEL_VER=#{kernel_ver} && mv #{build_dir}/build/linux-#{kernel_ver} ~/."
+  command "cd #{build_dir} && make && mv #{build_dir}/build/linux-4.1.2 ~/."
 end
