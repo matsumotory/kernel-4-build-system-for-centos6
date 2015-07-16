@@ -14,6 +14,9 @@ itamae: vagrant
 vagrant:
 	vagrant up
 
+size:
+	vagrant ssh -c "df -h"
+
 clean:
 	-rm -rf $(BUILD_DIR)
 	vagrant ssh -c "cd /usr/local/src/kernel-build/ && make KERNEL_VER=$(KERNEL_VER) clean"
