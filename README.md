@@ -27,6 +27,11 @@ make KERNEL_VER=3.18.18
 
 create rpm into `./build/kernel-{4,3}.x.y`
 
+## confirm the kernel version build completely
+- 4.1.2
+- 4.1.1
+- 3.18.18
+
 ## License
 under the MIT License:
 - see LICENSE file
