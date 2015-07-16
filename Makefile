@@ -9,7 +9,7 @@ BUILD_DIR=$(PWD)/build/linux-$(KERNEL_VER)
 all: itamae
 
 itamae: vagrant
-	itamae ssh -l debug --vagrant roles/build-kernel-$(KERNEL_VER)-for-centos6.rb 
+	KERNEL_VER=$(KERNEL_VER) itamae ssh -l debug --vagrant roles/build-kernel-4.x.y-for-centos6.rb
 
 vagrant:
 	vagrant up
