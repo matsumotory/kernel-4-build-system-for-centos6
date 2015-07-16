@@ -23,3 +23,8 @@ make KERNEL_VER=4.1.2
 ```
 
 create rpm into ./build/kernel-4.x.y
+
+## License
+under the MIT License:
+- see LICENSE file
+
