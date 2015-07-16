@@ -25,7 +25,7 @@ make KERNEL_VER=4.1.2
 make KERNEL_VER=3.18.18
 ```
 
-create rpm into `./build/kernel-4.x.y`
+create rpm into `./build/kernel-{4,3}.x.y`
 
 ## License
 under the MIT License:
