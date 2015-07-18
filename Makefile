@@ -12,7 +12,7 @@ itamae: vagrant
 	KERNEL_VER=$(KERNEL_VER) itamae ssh -l debug --vagrant roles/build-kernel-4.x.y-for-centos6.rb
 
 vagrant:
-	vagrant up
+	vagrant up || vagrant plugin install vagrant-persistent-storage
 
 size:
 	vagrant ssh -c "df -h"
