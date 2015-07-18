@@ -25,5 +25,5 @@ clean:
 	vagrant ssh -c "cd /usr/local/src/kernel-build/ && make KERNEL_VER=$(KERNEL_VER) clean"
 
 clobber:
-	vagrant ssh -c "rm -rf ~/rpmbuild/* /usr/local/src/kernel-build/*"
+	vagrant ssh -c "rm -rf ~/rpmbuild/* && sudo rm -rf /usr/local/src/kernel-build"
 
