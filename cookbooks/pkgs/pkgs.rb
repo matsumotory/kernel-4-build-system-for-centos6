@@ -36,6 +36,6 @@ end
 end
 
 execute "group install Development Tools" do
-  command 'yum -y groupinstall "Development Tools"'
+  command 'yum -y --enablerepo=C6.4-updates groupinstall "Development Tools"'
 end
 
