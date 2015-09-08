@@ -3,12 +3,12 @@
 #
 PWD=$(shell pwd)
 
-KERNEL_VER=$(shell curl -s https://www.kernel.org | grep latest_link -A1 | tail -1 | perl -nle '/>([^<]+)</; print $$1')
+KERNEL_VER=$(shell curl -s https://www.kernel.org | grep stable: -A1 | tail -1 | perl -nle '/>([^<]+)</; print $$1')
 BUILD_DIR=$(PWD)/build/linux-$(KERNEL_VER)
 
 all: itamae
 
-latest: itamae
+stable: itamae
 
 itamae: vagrant
 	KERNEL_VER=$(KERNEL_VER) itamae ssh -l debug --vagrant roles/build-kernel-4.x.y-for-centos6.rb
