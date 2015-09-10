@@ -18,7 +18,7 @@ make
 
 or 
 
-``
+```
 make stable
 ```
 
