@@ -10,10 +10,16 @@ kernel {4,3}.x.y build system for centos 6 created by Vagrant and Itamae
 
 ## create build server
 
-- kernel-4.1.1
+- build stable kernel
 
 ```
 make
+```
+
+or 
+
+``
+make stable
 ```
 
 - kernel-4.1.2 or other kernel version
