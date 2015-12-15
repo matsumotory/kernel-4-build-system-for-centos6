@@ -11,7 +11,7 @@ all: itamae
 stable: itamae
 
 itamae: vagrant
-	KERNEL_VER=$(KERNEL_VER) itamae ssh -l debug --vagrant roles/build-kernel-4.x.y-for-centos6.rb
+	KERNEL_VER=$(KERNEL_VER) bundle exec itamae ssh -l debug --vagrant roles/build-kernel-4.x.y-for-centos6.rb
 
 vagrant:
 	vagrant up || vagrant plugin install vagrant-persistent-storage
