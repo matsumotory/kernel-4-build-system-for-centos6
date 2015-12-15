@@ -8,6 +8,12 @@ kernel {4,3}.x.y build system for centos 6 created by Vagrant and Itamae
 - vagrant-persistent-storage
 - itamae
 
+You can run setup task below(Vagrant and Ruby/Bundler should be pre-installed, so ask google how):
+
+```
+make setup
+```
+
 ## create build server
 
 - build stable kernel
