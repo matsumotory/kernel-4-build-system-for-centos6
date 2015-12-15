@@ -1,3 +1,7 @@
 .vagrant/
 build-space.vdi
 build/*
+
+/Gemfile.lock
+/vendor
+/.bundle
