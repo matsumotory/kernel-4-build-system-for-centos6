@@ -26,3 +26,6 @@ clean:
 clobber:
 	vagrant ssh -c "rm -rf ~/rpmbuild/* && sudo rm -rf /usr/local/src/kernel-build"
 
+setup:
+	bundle install --path=vendor/bundle
+	vagrant plugin install vagrant-persistent-storage
