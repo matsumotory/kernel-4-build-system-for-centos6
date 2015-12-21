@@ -39,11 +39,10 @@ make KERNEL_VER=3.18.18
 
 create rpm into `./build/kernel-{4,3}.x.y`
 
-## confirm the kernel version build completely(2015-07-20)
-- 4.2-rc3
-- 4.2-rc2
-- 4.1.2
-- 4.1.1
+## confirm the kernel version build completely(2015-12-21)
+- 4.3.x
+- 4.2.x
+- 4.1.x
 - 3.18.18
 - 3.14.48
 - 3.12.44
