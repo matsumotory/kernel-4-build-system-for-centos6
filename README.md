@@ -37,7 +37,7 @@ make KERNEL_VER=4.1.2
 make KERNEL_VER=3.18.18
 ```
 
-- use kernel build parameters
+- change kernel build parameters
 
 ```
 make KERNEL_VER=4.4.1 KERNEL_BUILD_HOST=matsumoto-r.jp KERNEL_BUILD_USER=matsumotory KERNEL_LOCAL_VER=.matsumotory
