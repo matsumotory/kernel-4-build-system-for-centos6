@@ -1,6 +1,6 @@
 # Kernel {4,3}.x.y build system for CentOS 6
 
-kernel {4,3}.x.y build system for centos 6 created by Vagrant and Itamae
+kernel {4,3}.x.y rpm of CentOS6 build system on OS X using Vagrant, Itamae and [kernel rpm build system on linux](https://github.com/matsumoto-r/build-kernel-4.x-for-centos6)
 
 ## dependency
 
@@ -67,4 +67,3 @@ create rpm into `./build/kernel-{4,3}.x.y`
 ## License
 under the MIT License:
 - see LICENSE file
-
