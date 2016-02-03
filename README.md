@@ -1,4 +1,4 @@
-# Kernel {4,3}.x.y rpm of CentOS6 build system on Mac OS X
+# Kernel rpm for CentOS6 build system on Mac OS X
 
 kernel {4,3}.x.y rpm of CentOS6 build system on OS X using Vagrant, Itamae and [kernel rpm build system on linux](https://github.com/matsumoto-r/build-kernel-4.x-for-centos6)
 
