@@ -17,7 +17,7 @@ user = ENV["KERNEL_BUILD_USER"].nil? ? "" : ENV["KERNEL_BUILD_USER"]
 prefix = ENV["KERNEL_LOCAL_VER"].nil? ? "" : ENV["KERNEL_LOCAL_VER"]
 
 git build_dir do
-  repository "https://github.com/matsumoto-r/build-kernel-4.x-for-centos6.git"
+  repository "https://github.com/matsumotory/build-kernel-4.x-for-centos6.git"
 end
 
 execute "setup building kernel" do
